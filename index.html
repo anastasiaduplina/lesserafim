@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta name="description" content="Site about Le sserafim"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anastasia Duplina">
+    <meta name="keywords" content="le-sserafim k-pop">
+    <meta property="og:title" content="Le Sserafim">
+    <meta property="og:image" content="image/icon.jpg">
+    <meta property="og:type" content="profile">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Le Sserafim</title>
+</head>
+<body class="page">
+    <canvas id="myCanvas" class="canvas" style="position: fixed; width: 100%; height: 100vh;" ></canvas>
+    <header class="header color">
+        <div class="main-page">
+            <div class="main-page__icon"></div>
+            <div class="main-page__name">
+                <a class="text link text_l" href="">
+                    <p class="text link_active">Le Sserafim</p>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <a class="text link text_m" href="#gallery">Gallery</a>
+            <a class="text link text_m" href="#songs">Songs</a>
+            <a class="text link text_m" href="#contact">Contact</a>
+        </div>
+    </header>
+    <main class="main">
+                <section id="profile" class="profile color">
+                    <div class="profile__image">
+                        <picture>
+                            <!-- <source srcset="image/image-profile.webp" type="image/webp"> -->
+                            <img class="image" src="photo1681312049 (1).jpeg" alt="Downloading...">
+                        </picture>
+                    </div>
+                    <div class="profile__text">
+                        <h1 class="text text_xxl margin_bottom_0">Le Sserafim</h1>
+                        <p class="text text_s margin_top_0">"I'm Fearless"</p>
+                        <p class="text text_m">LE SSERAFIM is a South Korean-Japanese girl group under Source Music that consists of five members: Sakura, Kim Chaewon, Huh Yunjin, Kazuha, and Hong Eunchae. Originally as six, the group debuted on May 2, 2022 with their first mini album FEARLESS.</p>
+                    </div>
+                </section>
+
+            <section id="gallery" class="gallery">
+                <ul>
+                    <li>
+                        <a href="#form" class="gallery__modal" >
+                            <img  src="./images/img1.jpeg" alt="Sakura" style="width: 300px;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#form" class="gallery__modal">
+                            <img  src="./images/img2.jpeg" alt="Yunjin" style="width: 300px;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#form" class="gallery__modal">
+                            <img  src="./images/img3.jpeg" alt="Kazuha" style="width: 300px;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#form" class="gallery__modal">
+                            <img  src="./images/img4.jpeg" alt="Eunchae" style="width: 300px;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#form" class="gallery__modal">
+                            <img  src="./images/img5.jpeg" alt="Chaewon" style="width: 300px;">
+                        </a>
+                    </li>
+                </ul>
+                <div class="gallery__popup-bg">
+                    <div id="form" class="gallery__popup">
+                        <a class="prev" >&#10094;</a>
+                        <div class="popup_image mySlides"></div>
+                        <a class="next" >&#10095;</a>
+                    </div>
+                    <div id="form2" class="gallery__popup">
+                    </div>
+                </div>
+
+            </section>
+            <div id="songs" class="videocontainer">
+                    <!-- <div class="videocontainer_column">
+                        <video class="video" controls autoplay muted> 
+                            <source src="image/good_boy_gonne_bad.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="text text_margin text_m">Good boy gonne mad</p>
+                    </div>
+                    <div class="videocontainer_column">
+                        <video class="video" controls>
+                            <source src="image/devil_by_the_window.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="text text_margin text_m">Devil by the window</p>
+                    </div>
+                    <div class="videocontainer_column">
+                        <video class="video" controls>
+                            <source src="image/sugar_rush_ride.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="text text_margin text_m">Sugar rush ride</p>
+                    </div>
+                    <div class="videocontainer_column">
+                        <video class="video" controls>
+                            <source src="image/loser=lover.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="text text_margin text_m">Loser=Lover</p>
+                    </div> -->
+                </div>
+    </main>
+    <section class="forms">
+        <a href="#form3" class="form_modal text link">Открыть form</a>
+        <div class="form__popup-bg">
+            <div id="form3" class="form__popup">
+                <form class="form">
+                    <label for="input1">text</label>
+                    <input id="input1" type="text" required maxlength="10">
+                    <span class="input1-error"></span>
+                    <label for="input2">email</label>
+                    <input id="input2" type="email" required>
+                    <span class="input2-error"></span>
+                    <button type="submit" disabled>Send</button>
+                </form>
+                <form class="form">
+                    <label for="input3">text</label>
+                    <input id="input3" type="text" required maxlength="5" minlength="2">
+                    <span class="input3-error"></span>
+                    <label for="input4">telephone</label>
+                    <input id="input4" type="tel" required>
+                    <span class="input4-error"></span>
+                    <button type="submit" disabled>Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <div>
+        <div class="time__popup-bg">
+            <div id="time" class="time__popup">
+                <img src="photo1681312049.jpeg" alt="popup" style="width:300px;">
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="footer color">
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/hueningkai_official/" target="_blank">
+                    <img  class="footer__icons_img" src="images/instagram.png" alt="Downloading...">
+                </a>
+                <a href="https://weverse.io/txt/profile/81eea3da3f19ab483efa6c5c31e4dce2" target="_blank">
+                    <img  class="footer__icons_img" src="images/weverse.png" alt="Downloading...">
+                </a>
+                <a href="tel:+000000000">
+                    <img  class="footer__icons_img" src="images/phone.png" alt="Downloading...">
+                </a>
+                <a href="mailto:example@example.com">
+                    <img  class="footer__icons_img" src="images/email.png" alt="Downloading...">
+                </a>
+            </div>
+            <p class="text text_center">Handcrafted by me @bruschatka</p>
+            <button class="makeBlack">make black</button>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
